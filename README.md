@@ -14,7 +14,11 @@ pip install librosa torchaudio torch transformers pandas
 ## 2. Data
 The Switchboard dataset is not included in this directory, and would need to be downloaded separately. 
 
-To reproduce the training, eval, and test data used in this work, you would need our time-aligned version of the Switchboard Dialogue Act corpus ([SwDA](https://github.com/cgpotts/swda)) and the original Switchboard audios and transcripts (the .mrk files). We have code in this repository to align individual utterances from SwDA `.utt.csv` files to word timestamps in the Switchboard LDC release, and we are working on releasing this timestamped version.
+To reproduce the training, eval, and test data used in this work, you would need our time-aligned version of the Switchboard Dialogue Act corpus ([SwDA](https://github.com/cgpotts/swda)) and the original Switchboard audios and transcripts (the .mrk files). 
+
+For easier replication, we include our timed version of SwDA in this repository (`timed_swda_files.zip`).
+
+We have code in this repository to align individual utterances from SwDA `.utt.csv` files to word timestamps in the Switchboard LDC release, and we are working on releasing this timestamped version.
 
 Then, extract the train, validation, and test set data in the following manner.
 
